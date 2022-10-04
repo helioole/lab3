@@ -4,7 +4,7 @@
 ## Hotel Simulation
 In this laboratory work I've tried to implement Inheritance which is one of the OOP principles. Next below you can see the diagram of all my classes and their relations:
 
-![Blank diagram](https://user-images.githubusercontent.com/113358365/193716474-949521f0-4d72-4e3d-833f-5d02ff10c574.png)
+![Blank diagram(1)](https://user-images.githubusercontent.com/113358365/193805949-420c82dd-e46c-4fc8-af53-bbc0b8a0e7c7.png)
 
 
 As you can see, I have a root class `Guest` where all the children classes come from.
