@@ -1,7 +1,7 @@
 # lab3
 >OOP Lab2. Racovcena Irina. FAF-212
 
-##Hotel Simulation
+## Hotel Simulation
 In this laboratory work I've tried to implement Inheritance which is one of the OOP principles. Next below you can see the diagram of all my classes and their relations:
 
 ![Blank diagram](https://user-images.githubusercontent.com/113358365/193716474-949521f0-4d72-4e3d-833f-5d02ff10c574.png)
