@@ -3,7 +3,7 @@
 
 ## Scenarios
 ### The 1st scenario
-Obviously, we won't be able to continue if there's no available room. THat's why simulation stops when `Manager` can't find our guest a room.
+Obviously, we won't be able to continue if there's no available room. That's why simulation stops when `Manager` can't find our guest a room.
 
 ### The 2nd scenario
 The guest takes his keys and has to go to room.
