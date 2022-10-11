@@ -28,6 +28,9 @@ It's the first time the guest is being our city. We have to show him the best th
 ### The 8th scenario
 In the end of the trip the guest has to pay for his vacation. He has some ammount of money, but we don't know if he can afford everything he wants. So, either our guest will pay for service, either he'll solve the problem in the other way.
 
+### Polymorphism
+In order to implement polymorphism I added interfaces such as `Int_Person` and `Int_Service`. Abstract classes `Person` and `Services` implement them. `Person` class has a method `speak()` and `bye()` which are overrided in all its child classes `Manager`, `Cleaning` and `Porter` in order to change to fit their roles, so they can present them and provide the needed answers.  
+
 ### Updated diagram
 
 ![oop](https://user-images.githubusercontent.com/113358365/195078300-8b97daad-3679-4d29-90bd-fe4667b6c0db.png)
