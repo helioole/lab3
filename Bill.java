@@ -6,13 +6,6 @@ public class Bill extends Manager{
     private int tips;
 //    private int warranty = 25;
 
-    public int getPayment() {
-        return payment;
-    }
-    public void setPayment(int payment) {
-        this.payment = payment;
-    }
-
     public void payBill(){
         tips = random.nextInt(50);
         payment += check;

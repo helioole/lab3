@@ -3,9 +3,9 @@ import java.util.Random;
 abstract class Hotel {
     public int review = 0;
     public int wallet;
-//    public int tips;
+    public int tips;
     public int check = 70;
-//    public int overall;
+
 
     public String feedback = "[REVIEW] ";
     public String cleaner = "[Cleaner] ";
@@ -15,20 +15,16 @@ abstract class Hotel {
     public String opt = "[OPTION] ";
     public String bill = "[BILL] ";
 
-    public int getCheck() {
-        return check;
+    public void setTips(int tips) {
+        this.tips += tips;
+    }
+
+    public void setCheck(int check) {
+        this.check += check;
     }
 
     public void setReview(int review) {
         review ++;
-    }
-
-    public void setTips(int tips) {
-        tips ++;
-    }
-
-    public void setCheck(int check) {
-        check ++;
     }
 
     public void setWallet(int wallet) {
