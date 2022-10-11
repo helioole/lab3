@@ -10,7 +10,7 @@ The guest takes his keys and has to go to room.
 The guest might need a help with his heavy bags. So, `Porter` can help him or he will be forced to wait a little bit in order to another porter to come for help.
 
 ### The 3rd scenario
-The guest estimates the room he've just got. If it's dirty, he will be angry. There are 2 possible ways of this conflict: either we can please him and beg him to stay with our "createMeals()" method, either he'll leave th ehotel immediately
+The guest estimates the room he've just got. If it's dirty, he will be angry. There are 2 possible ways of this conflict: either we can please him and beg him to stay with our `createMeals()` method, either he'll leave th ehotel immediately
 If the room is clean, he is satisfied
 
 ### The 4th scenario
