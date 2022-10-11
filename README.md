@@ -28,7 +28,9 @@ It's the first time the guest is being our city. We have to show him the best th
 ### The 8th scenario
 In the end of the trip the guest has to pay for his vacation. He has some ammount of money, but we don't know if he can afford everything he wants. So, either our guest will pay for service, either he'll solve the problem in the other way.
 
+### Updated diagram
 
+![oop](https://user-images.githubusercontent.com/113358365/195078300-8b97daad-3679-4d29-90bd-fe4667b6c0db.png)
 
 
 ## Hotel Simulation
