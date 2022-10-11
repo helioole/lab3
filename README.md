@@ -33,7 +33,7 @@ In order to implement polymorphism I added interfaces such as `Int_Person` and `
 
 ### Updated diagram
 
-![oop](https://user-images.githubusercontent.com/113358365/195078300-8b97daad-3679-4d29-90bd-fe4667b6c0db.png)
+![oop(1)](https://user-images.githubusercontent.com/113358365/195087248-f05c2820-9af0-449d-bb64-c87777b84b20.png)
 
 
 ## Hotel Simulation
