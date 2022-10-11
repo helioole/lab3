@@ -1,9 +1,7 @@
 import java.util.Random;
 
-public class Services extends Guest{
+public class Services extends Hotel implements Int_Service{
     Random random = new Random();
-    //other guests' needs such as
-    //medical services, taxi, souvenir
     public boolean isBroken;
     public boolean before;
     public  boolean isIll;

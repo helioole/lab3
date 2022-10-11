@@ -1,64 +1,66 @@
 import java.util.Random;
 
-public class Manager extends Room{
-    Random random = new Random();
-    public int room_price = 70;
-    public int tips; // tips for staff are included in the bill
+public class Manager extends Person{
+    private int occupied_rooms;
+    private boolean isOccupied;
+    private int room_index = 0;
 
-    public boolean help = true;
-    //private int available_rooms;
+    public boolean isOccupied() {
 
-    public boolean isHelp() {
-        return help;
+        return isOccupied;
     }
 
-    public int getTips() {
-        return tips;
+    public int getAvailable_rooms() {
+        return occupied_rooms;
     }
 
-    public void setTips(int tips) {
-        this.tips = tips;
+    public int getRoom_index() {
+
+        return room_index;
     }
 
-    public int getRoom_price() {
-        return room_price;
+    public void setRoom_index(int room_index) {
+
+        this.room_index = room_index;
     }
 
-    public void setHelp(boolean help) {
-        this.help = help;
+    public void setAvailable_rooms(int available_rooms) {
+
+        this.occupied_rooms = available_rooms;
     }
 
-    public void setRoom_price(int room_price) {
-        this.room_price = room_price;
+    public void setOccupied(boolean occupied) {
+
+        isOccupied = occupied;
+    }
+    @Override
+    public void speak(){
+        System.out.printf("%sMy name is %s. The room is prepared for you", man, call);
+        System.out.println();
     }
 
-
-    public int giveTips(){
-        tips = random.nextInt(50);
-        return tips;
+    @Override
+    public void bye(){
+        System.out.printf("%sWe'll work on quality of our service", man);
+        System.out.println();
     }
-
-    public boolean needs_help(){
-        help = random.nextBoolean();
-        return help;
-    }
-
     public void available() {
-
-        //inheriting the method from Guest
-        welcome();
-
-        //inheriting methods from Room
-        av_rooms();
-        index();
-                if (occupied_rooms >= 5) {
-                    System.out.println("[Manager] Oh, sorry. We don't have enough free rooms");
-                    System.exit(0);
-
-                } else {
-                    //check += 70; - room_price
-                    System.out.println("[Manager] Your room is " + room_index + ". Take your keys");
-                    System.out.println("[Manager] Do you need help with your luggage?");
-                }
+        Random random = new Random();
+        this.room_index = random.nextInt(6);
+        this.occupied_rooms = random.nextInt(10);
+        System.out.printf("%sWelcome to our hotel", man);
+        System.out.println();
+        if (occupied_rooms >= 5) {
+            isOccupied = true;
+            setReview(-1);
+            System.out.printf("%sOh, sorry. We don't have enough free rooms", man);
+            System.out.println();
+            System.exit(0);
+        } else {
+            setReview(-1);
+            setTips(3);
+            System.out.println("[Manager] Your room is " + room_index + ". Take your keys");
+            setCheck(70);
+        }
     }
 }

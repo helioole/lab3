@@ -1,29 +1,31 @@
 public class Main {
     public static void main(String[] args) {
         Manager manager = new Manager();
-        Clean clean = new Clean();
-        Complaint complaint = new Complaint();
-        Baggage baggage = new Baggage();
-//        Services services = new Services();
-        Unsatisfied unsatisfied = new Unsatisfied();
-        Repair repair = new Repair();
+        Cleaning clean = new Cleaning();
         Bill bill = new Bill();
+        Porter porter = new Porter();
+        Services services = new Services();
+        Repair repair = new Repair();
         Souvenir souvenir = new Souvenir();
         Taxi taxi = new Taxi();
         Medical medical = new Medical();
 
+        manager.speak();
         manager.available();
-        baggage.bag();
-//        other.things();
-//       feedback.feedbackCheck();
+        manager.bye();
+        porter.speak();
+        porter.bag();
+        porter.bye();
+        clean.speak();
         clean.cleaningCheck();
-        unsatisfied.unsatisfied_check();
+        clean.bye();
         repair.repairProblems();
         medical.help();
         taxi.waiting();
         souvenir.things();
         bill.payBill();
-        complaint.feedbackCheck();
+        bill.feedback();
+        bill.taxes();
 
     }
 }

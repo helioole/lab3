@@ -33,4 +33,8 @@ public class Souvenir extends Services{
         }
     }
 
+    public void hi() {
+        System.out.println("[Client] I'll pick a ");
+    }
+
 }
