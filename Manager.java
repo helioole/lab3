@@ -28,8 +28,8 @@ public class Manager extends Person{
     }
     public int available(Porter porter) {
         speak();
-        room_index = random.nextInt(6);
-        occupied_rooms = random.nextInt(10);
+        room_index = random.nextInt(51);
+        occupied_rooms = random.nextInt(7);
 
         if (occupied_rooms > 5) {
             System.out.printf("%sOh, sorry. We don't have enough free rooms", man);
