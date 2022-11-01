@@ -4,37 +4,32 @@ import java.util.*;
 public class Souvenir extends Services{
     Random random = new Random();
     private int index;
-    Map<String, Integer> map = new HashMap<>();
 
-    public void things(){
-        check_wants();
+    private ArrayList<String> souv = new ArrayList<String>();
+    private ArrayList<String> price1 = new ArrayList<String>();
+    private String op1;
+    private String op2;
 
-        map.put("Statue", 55);
-        map.put("Pot", 13);
-        map.put("Picture", 33);
+    public void things() {
 
-        Set<String> keySet = map.keySet();
-        List<String> keyList = new ArrayList<>(keySet);
+        souv.add("Pot");
+        souv.add("Picture");
+        souv.add("Statue");
 
-        int size = keyList.size();
-        int randIdx = new Random().nextInt(size);
+        price1.add("18");
+        price1.add("60");
+        price1.add("35");
 
-        String randomKey = keyList.get(randIdx);
-        Integer randomValue = map.get(randomKey);
+        System.out.println(souv);
+        System.out.println(price1);
 
-        if(wants){
-            System.out.println("[Guest] I would like to buy a souvenir");
-            for(Map.Entry mp : map.entrySet()){
-                System.out.println("[OPTION] Souvenir: " + mp.getKey() + " Price: " + mp.getValue());
-            }
-            System.out.println("[Client] I'll pick a " + randomKey);
-            System.out.println("[Manager] You are our loyal guest, that's why the hotel will cover the souvenir price");
+        String op1 = souv.get(random.nextInt(souv.size()));
+        String op2 = price1.get(random.nextInt(price1.size()));
 
-        }
+            System.out.println("[Client] I'll pick a " + op1 + " for " + op2 + " dollars");
+            souv.clear();
+            price1.clear();
+            int picked = Integer.parseInt(op2);
+            setSpending(picked);
     }
-
-    public void hi() {
-        System.out.println("[Client] I'll pick a ");
-    }
-
 }

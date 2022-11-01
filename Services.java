@@ -1,12 +1,11 @@
 import java.util.Random;
 
-public class Services extends Hotel implements Int_Service{
+public class Services extends Guest implements Int_Service{
     Random random = new Random();
     public boolean isBroken;
     public boolean before;
     public  boolean isIll;
     public boolean trip;
-    public boolean wants;
 
     public boolean check_isIll(){
         isIll = random.nextBoolean();
@@ -16,11 +15,6 @@ public class Services extends Hotel implements Int_Service{
     public boolean check_trip(){
         trip = random.nextBoolean();
         return trip;
-    }
-
-    public boolean check_wants(){
-        wants = random.nextBoolean();
-        return wants;
     }
 
     public boolean check_isBroken(){
