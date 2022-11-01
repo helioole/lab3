@@ -3,7 +3,7 @@
 
 ## Wrapping the simulation
 
-My program simulates days at Hotel. Every day new guests come. If there's no free room, starts a new day because we can't check in more people. So, we have as many guests as there are free rooms in the Hotel. Thus, there are different scenarious happenning which influent on each other and at the final result which I provide as statistics about Hotel profit. Reputation of the Hotel depends on its guests, same as fines, tips and overall income. Through simulation we can see how the hotel develops, how reviews about it change, does it gets better or worse, how much it earns
+My program simulates days at Hotel. Every day new guests come. If there's no free room, starts a new day because we can't check in more people. So, we have as many guests as there are free rooms in the Hotel. Thus, there are different scenarious happenning which influence on each other and at the final result which I provide as statistics about Hotel profit. Reputation of the Hotel depends on its guests, same as fines, tips and overall income. Through simulation we can see how the hotel develops, how reviews about it change, does it gets better or worse, how much it earns
 
 ## Scenarios
 ### The 1st scenario
